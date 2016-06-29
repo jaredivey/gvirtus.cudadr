@@ -83,7 +83,7 @@ AC_CHECK_HEADER([cuda.h], [], [
         ])])
 
 CPPFLAGS="-I`pwd`/util $CPPFLAGS"
-CXXFLAGS="$CXXFLAGS -Wall -pedantic -Werror"
+CXXFLAGS="$CXXFLAGS -Wall -Werror"
 
 AC_CONFIG_FILES([Makefile 
                  util/Makefile
