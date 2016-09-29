@@ -123,3 +123,10 @@ CUDA_DRIVER_HANDLER(ModuleGetTexRef) {
     out->AddMarshal(pTexRef);
     return new Result((cudaError_t) exit_code, out);
 }
+
+/*Unloads a module.*/
+CUDA_DRIVER_HANDLER(ModuleUnload) {
+    CUmodule hMod = input_buffer->Get<CUmodule > ();
+    CUresult exit_code = cuModuleUnload(hMod);
+    return new Result((cudaError_t) exit_code);
+}

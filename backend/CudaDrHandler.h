@@ -187,6 +187,7 @@ CUDA_DRIVER_HANDLER(ModuleGetFunction);
 CUDA_DRIVER_HANDLER(ModuleGetGlobal);
 CUDA_DRIVER_HANDLER(ModuleLoadDataEx);
 CUDA_DRIVER_HANDLER(ModuleGetTexRef);
+CUDA_DRIVER_HANDLER(ModuleUnload);
 
 /*CudaDrHandler_version*/
 CUDA_DRIVER_HANDLER(DriverGetVersion);

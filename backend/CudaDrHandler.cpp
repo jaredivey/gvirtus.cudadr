@@ -264,6 +264,7 @@ void CudaDrHandler::Initialize() {
     mspHandlers->insert(CUDA_DRIVER_HANDLER_PAIR(ModuleGetGlobal));
     mspHandlers->insert(CUDA_DRIVER_HANDLER_PAIR(ModuleLoadDataEx));
     mspHandlers->insert(CUDA_DRIVER_HANDLER_PAIR(ModuleGetTexRef));
+    mspHandlers->insert(CUDA_DRIVER_HANDLER_PAIR(ModuleUnload));
 
 
     /*CudaDrHandler_version*/
